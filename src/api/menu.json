@@ -1,0 +1,196 @@
+[
+    {
+        "uuid": "G",
+        "code": "G",
+        "kind": "B",
+        "name": "XX系統",
+        "children": [
+            {
+                "uuid": "G1",
+                "code": "G1",
+                "kind": "A",
+                "name": "G1",
+                "children": [
+                    {
+                        "uuid": "G1-4A",
+                        "code": "G1-4A",
+                        "kind": "B",
+                        "name": "員工認股檔",
+                        "url": "/dashboard/txn/G1-4A"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "uuid": "G1",
+        "code": "G1",
+        "kind": "A",
+        "name": "股東資料",
+        "icon": "IdentificationIcon",
+        "children": [
+            {
+                "uuid": "G1-3A",
+                "code": "G1-3A",
+                "kind": "B",
+                "name": "轉入本系統",
+                "url": "/dashboard/txn/G1-3A"
+            },
+            {
+                "uuid": "G1-05",
+                "code": "G1-05",
+                "kind": "B",
+                "name": "資料維護",
+                "url": "/dashboard/txn/G1-05"
+            }
+        ]
+    },
+    {
+        "uuid": "G2",
+        "code": "G2",
+        "kind": "A",
+        "name": "股票資料",
+        "icon": "ArrowTrendingUpIcon",
+        "children": [
+            {
+                "uuid": "G2-03",
+                "code": "G2-03",
+                "kind": "B",
+                "name": "展開",
+                "url": "/dashboard/txn/G2-03"
+            },
+            {
+                "uuid": "G2-24",
+                "code": "G2-24",
+                "kind": "B",
+                "name": "新戶開戶",
+                "url": "/dashboard/txn/G2-24"
+            },
+            {
+                "uuid": "G2-26",
+                "code": "G2-26",
+                "kind": "B",
+                "name": "員工配認股數",
+                "url": "/dashboard/txn/G2-26"
+            }
+        ]
+    },
+    {
+        "uuid": "G3",
+        "code": "G3",
+        "kind": "A",
+        "name": "股權資料",
+        "icon": "ClipboardIcon",
+        "children": [
+            {
+                "uuid": "G3-09",
+                "code": "G3-09",
+                "kind": "B",
+                "name": "總和查詢",
+                "url": "/dashboard/txn/G3-09"
+            }
+        ]
+    },
+    {
+        "uuid": "G4",
+        "code": "G4",
+        "kind": "A",
+        "name": "董事會作業",
+        "icon": "UsersIcon",
+        "children": [
+            {
+                "uuid": "G4-21",
+                "code": "G4-21",
+                "kind": "B",
+                "name": "員工＆特定人新戶證號檢核表",
+                "url": "/dashboard/txn/G4-21"
+            },
+            {
+                "uuid": "G4-24",
+                "code": "G4-24",
+                "kind": "B",
+                "name": "員工＆特定人證號重覆檢核表",
+                "url": "/dashboard/txn/G4-24"
+            }
+        ]
+    },
+    {
+        "uuid": "G5",
+        "code": "G5",
+        "kind": "A",
+        "name": "股東會作業",
+        "icon": "UsersIcon",
+        "children": [
+            {
+                "uuid": "G10-12",
+                "code": "G10-12",
+                "kind": "B",
+                "name": "列印一般保管帳戶開戶資料",
+                "url": "/dashboard/txn/G10-12"
+            }
+        ]
+    },
+    {
+        "uuid": "G6",
+        "code": "G6",
+        "kind": "A",
+        "name": "除權作業",
+        "icon": "Square3Stack3DIcon",
+        "children": [
+            {
+                "uuid": "G10-12",
+                "code": "G10-12",
+                "kind": "B",
+                "name": "列印一般保管帳戶開戶資料",
+                "url": "/dashboard/txn/G10-12"
+            }
+        ]
+    },
+    {
+        "uuid": "G7",
+        "code": "G7",
+        "kind": "A",
+        "name": "申報作業",
+        "icon": "NewspaperIcon",
+        "children": [
+            {
+                "uuid": "G10-12",
+                "code": "G10-12",
+                "kind": "B",
+                "name": "列印一般保管帳戶開戶資料",
+                "url": "/dashboard/txn/G10-12"
+            }
+        ]
+    },
+    {
+        "uuid": "G8",
+        "code": "G8",
+        "kind": "A",
+        "name": "G8 其他功能",
+        "icon": "Squares2X2Icon",
+        "children": [
+            {
+                "uuid": "G10-12",
+                "code": "G10-12",
+                "kind": "B",
+                "name": "列印一般保管帳戶開戶資料",
+                "url": "/dashboard/txn/G10-12"
+            }
+        ]
+    },
+    {
+        "uuid": "Z",
+        "code": "Z",
+        "kind": "A",
+        "name": "功能展示(demo用)",
+        "children": [
+            {
+                "uuid": "demo",
+                "code": "demo",
+                "kind": "B",
+                "name": "demo",
+                "url": "/dashboard/txn/demonstration"
+            }
+        ]
+    }
+]

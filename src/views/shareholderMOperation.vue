@@ -3,6 +3,14 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
+console.log('ShareholderMOperation component created')
+
+onMounted(() => {
+  console.log('ShareholderMOperation component mounted')
+})
+
 
 </script>
 
