@@ -61,8 +61,8 @@ export interface MenuItem extends Response {
 
 const props = defineProps<{
     data: MenuItem[];
-    level: 1;
-    isOpen: false;
+    level: number;
+    isOpen: boolean;
 }>()
 
 const menuStore = useMenuStore();
