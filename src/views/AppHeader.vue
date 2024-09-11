@@ -15,23 +15,7 @@
             <input type="text" placeholder="搜索"
               class="pl-8 pr-2 py-1 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500">
               <MagnifyingGlassIcon class="h-4 w-4 absolute left-2 top-2" aria-hidden="true"/>
-              <!-- <svg class="w-4 h-4 absolute left-2 top-2 text-gray-400" fill="none" stroke="currentColor"
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg> -->
           </div>
-          <!-- <button class="text-gray-600 hover:text-gray-900">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
-              </path>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-          </button> -->
-
 
           <Menu as="div" class="relative ml-3">
             <div>
@@ -82,37 +66,6 @@
               </MenuItems>
             </transition>
           </Menu>
-
-          <!-- <div class="fixed top-16 w-full max-w-sm px-4">
-            <Popover v-slot="{ open }" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-              <PopoverButton>
-                <img class="h-8 w-8 rounded-full" :src="user.imageUrl" alt="" />
-              </PopoverButton>
-              <transition enter-active-class="transition duration-200 ease-out"
-                enter-from-class="translate-y-1 opacity-0" enter-to-class="translate-y-0 opacity-100"
-                leave-active-class="transition duration-150 ease-in" leave-from-class="translate-y-0 opacity-100"
-                leave-to-class="translate-y-1 opacity-0">
-                <PopoverPanel
-                  class="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-1xl">
-                  <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                    <div class="bg-gray-50 p-4">
-                      <a href="##"
-                        class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50">
-                        <span class="flex items-center">
-                          <span class="text-sm font-medium text-gray-900">
-                            Documentation
-                          </span>
-                        </span>
-                        <span class="block text-sm text-gray-500">
-                          Start integrating products and tools
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </PopoverPanel>
-              </transition>
-            </Popover>
-          </div> -->
         </div>
       </div>
     </div>

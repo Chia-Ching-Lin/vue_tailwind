@@ -16,7 +16,18 @@
                         "code": "G1-4A",
                         "kind": "B",
                         "name": "員工認股檔",
-                        "url": "/dashboard/txn/G1-4A"
+                        "url": "/dashboard/txn/G1-4A",
+                        "children": [
+                            {
+                                "uuid": "G1-4A",
+                                "code": "G1-4A",
+                                "kind": "B",
+                                "name": "我是第四層",
+                                "url": "/dashboard/txn/G1-4A"
+                                
+                            }
+                        ]
+                        
                     }
                 ]
             }

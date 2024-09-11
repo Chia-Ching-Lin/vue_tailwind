@@ -1,11 +1,11 @@
 <template>
     <aside @mouseleave="handleMouseLeave"
-        :class="['bg-white shadow-md relative', 'transition-all duration-300 ease-in-out', (pointerOpen || isOpen) ? 'w-80' : 'w-16']">
+        :class="['bg-menu-bg shadow-md relative', 'transition-all duration-300 ease-in-out', (pointerOpen || isOpen) ? 'w-80' : 'w-16']">
         <nav>
             <div v-for="(config, index) in data" :key="config.code" @click="openTab()">
                 <div @click="toggleSubmenu(index)" @mouseenter="handleMouseEnter" 
-                    :class="['px-4 flex items-center py-2 text-gray-600 hover:bg-gray-200 h-12 relative cursor-pointer',
-                    { 'bg-gray-200': isActiveRoute(config) }]">
+                    :class="['px-4 flex items-center py-2 text-menu-text hover:bg-menu-hover h-12 relative cursor-pointer',
+                    { 'bg-menu-active': isActiveRoute(config) }]">
                     <div v-if="level === 1"
                         class="w-14 flex items-center justify-center absolute left-0 top-0 bottom-0">
                         <component :is="getIcon(config.icon)" class="w-5 h-5 transition-all duration-300 ease-in-out"
@@ -37,13 +37,13 @@ import {
     DocumentIcon,
     ChevronDownIcon,
     IdentificationIcon,
-    UsersIcon, 
-    ArrowTrendingUpIcon, 
-    CurrencyDollarIcon, 
-    NewspaperIcon, 
-    Square3Stack3DIcon, 
-    Squares2X2Icon, 
-    ClipboardIcon, 
+    UsersIcon,
+    ArrowTrendingUpIcon,
+    CurrencyDollarIcon,
+    NewspaperIcon,
+    Square3Stack3DIcon,
+    Squares2X2Icon,
+    ClipboardIcon,
     ChevronUpIcon
 } from '@heroicons/vue/24/outline'
 import type { Response } from '../api/common/model';
@@ -61,32 +61,32 @@ export interface MenuItem extends Response {
 
 const props = defineProps<{
     data: MenuItem[];
-    level: number;
-    isOpen: boolean;
+    level: 1;
+    isOpen: false;
 }>()
 
 const menuStore = useMenuStore();
 
 const emits = defineEmits(['openTab']);
 const openTab = () => {
-  emits('openTab');
+    emits('openTab');
 };
 
 const navigateByRouteName = (routeId: string, index: number, routeName: string, kind: string) => {
-  menuStore.storeData.routeId = '';
-  menuStore.storeData.routeName = '';
+    menuStore.storeData.routeId = '';
+    menuStore.storeData.routeName = '';
 
-  console.log('routeId:'+routeId,'index:'+index, 'routeName:'+routeName, 'kind:'+kind)
-  // 還有子層代表屬於目錄，非功能
-//   if (isDirectoryRecordList[index]) return;
-  // router找不到路徑也return
-//   if (!router.hasRoute(routeId)) return;
-  // 若kind不為B也return
-  if (kind !== 'B') return;
+    console.log('routeId:' + routeId, 'index:' + index, 'routeName:' + routeName, 'kind:' + kind)
+    // 還有子層代表屬於目錄，非功能
+    //   if (isDirectoryRecordList[index]) return;
+    // router找不到路徑也return
+    //   if (!router.hasRoute(routeId)) return;
+    // 若kind不為B也return
+    if (kind !== 'B') return;
 
-  // 將routeId 跟 routeName存入pinia
-  menuStore.storeData.routeId = routeId;
-  menuStore.storeData.routeName = routeName;
+    // 將routeId 跟 routeName存入pinia
+    menuStore.storeData.routeId = routeId;
+    menuStore.storeData.routeName = routeName;
 };
 
 const route = useRoute()
@@ -99,13 +99,13 @@ const iconComponents = {
     DocumentIcon,
     ChevronDownIcon,
     IdentificationIcon,
-    UsersIcon, 
-    ArrowTrendingUpIcon, 
-    CurrencyDollarIcon, 
-    NewspaperIcon, 
-    Square3Stack3DIcon, 
-    Squares2X2Icon, 
-    ClipboardIcon, 
+    UsersIcon,
+    ArrowTrendingUpIcon,
+    CurrencyDollarIcon,
+    NewspaperIcon,
+    Square3Stack3DIcon,
+    Squares2X2Icon,
+    ClipboardIcon,
     ChevronUpIcon
 }
 
@@ -117,11 +117,13 @@ const toggleSubmenu = (index: number) => {
     openSubmenuIndex.value = openSubmenuIndex.value === index ? null : index
 }
 
+//滑鼠指標碰到
 const handleMouseEnter = () => {
     if (shouldApplyHoverStyles.value) {
         pointerOpen.value = true
     }
 }
+
 
 //滑鼠指標離開
 const handleMouseLeave = () => {
